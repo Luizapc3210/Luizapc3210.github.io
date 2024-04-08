@@ -1,0 +1,146 @@
+ html { 
+ 	background-color: #FA4B4B;
+	 }
+	 
+/*letreiro*/
+#letreiro{
+	border-width: 40px; // Estiliza a sua largura
+	color: blue ;
+	border-style: solid; // Estiliza seu estilo
+	border-color:  blue; // Estiliza sua cor
+	border-top: 30px solid blue;
+	background-color: rgb(150, 215, 255);
+}
+
+
+/*titulo*/
+	#titulo1{
+		text-align: center;
+	    color: black;
+	 }
+
+	title{
+	 	border: 50px;
+	 }
+
+	h1{
+	 	font-family: league spartan;
+	 	text-align: center;
+	 	color: black;
+	}
+
+/*imagens*/
+	#imagem_tordos{
+		height:500px;
+		width: 300px;
+		position: 700px;
+	 }
+
+	#imagem_revolucao{
+		align-items: right;
+		height: 500px;
+		width: 400px;
+	 }
+
+/*espaço tab*/	
+	 .tab {
+	            display: inline-block;
+	             margin-left: 40px;
+	 }
+	
+/*parágrafo*/
+		p{
+	 	font-family: league spartan; 
+	 	font-size: 20px ; 
+	 	text-align: justify;
+	 	padding: 0px;
+	 	border: 50px;
+	 	margin: 5px 10px 15px 30px;
+
+	}
+		
+	li{
+		text-align: ; 
+		border-right: : 1000px; 
+		margin-left: 50px;
+	}
+
+
+/*botões*/
+	#botao_jornada{
+		background-color:black; 
+		color:white; 
+		padding:10px 20px; 
+		border:none; 
+		border-radius:5px;
+	}
+
+	#botao_usuario{
+	background-color:black; 
+		color:white; 
+		padding:10px 20px; 
+		border:none; 
+		border-radius:5px;	
+	}
+
+	/*
+	a:link {
+	  color: black;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+	a:visited {
+	  color: pink;
+	  background-color: black ;
+	  text-decoration: none;
+	}
+	/*a:hover {
+	  color: red;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+	a:active { 
+	  color: yellow;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+	*/
+	#divBusca{
+  background-color:#2F4F4F;
+  border:solid 1px;
+  border-radius:15px;
+  width:300px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
+}
+
+	.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf > div
+{
+ display:table-cell;
+    vertical-align:top;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
