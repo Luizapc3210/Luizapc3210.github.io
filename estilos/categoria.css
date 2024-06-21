@@ -6,207 +6,160 @@ body {
 	margin: 0px !important;
 }
 
-header {
-    width: 100%;
-    height: 60px;
-    position: fixed/*static*/;
-    top: 0;
-    background-color: #333;
+.cabeçalho {
+    color: #fff;
+    width: 100%; /*Largura*/
+    height: 40px; /*Comprimento*/
+    background-color: #333; /*Cor de fundo*/
+    padding: 15px; /*Distância do elemento e a borda*/
+    display: flex; /*Traz a flexibilidade de posicionamento de itens de se adequarem a tela*/
+    justify-content: space-between; /*Alinhamento de itens em que 'space-between' desloca o primeiro item para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles;*/
+    align-items: center; /*Alinhamento de itens no centro*/
 }
 
 .logo {
-    display: flex;
-    margin-top: 15px;
-}
-
-.cabeçalho {
-    color: #fff;
-    width: 100%;
-    height: 40px;
-    background-color: #333;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.content {
-    margin-top: 50px;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    float: right;
-    margin-right: 15px;
-}
-
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center; 
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #ddd !important;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.topnav-right {
-    float: right;
-}
-
-#tordo-logo {
-	height: 40px;
-	width: 40px;
+    display: flex; /*Traz a flexibilidade de posicionamento de itens de se adequarem a tela*/
+    margin-top: 15px; /*Margem do topo*/
 }
 
 .titulo-logo-header {
-	color: white;
-	border: 10px;
-	padding-left: 10px;
-	margin-top: 10px;
-	text-align: center;
+	color: white; /*cor*/
+	border: 10px; /*Borda*/
+	padding-left: 10px; /*Espaçameto esquerdo entre o elemento e a borda*/
+	margin-top: 10px; /*Margem do topo*/
+	text-align: center; /*Alinhamento do texto*/
+}
+
+#tordo-logo {
+	width: 40px; /*Largura*/
+	height: 40px; /*Comprimento*/
+}
+
+
+.topnav {
+    overflow: hidden; /*Não deixa o elemento passar do tamanho. O 'hidden' esconde parte de um elemeento para que ele não passe do tamanho determinado*/
+    background-color: #333; /*Cor de fundo*/
+    float: right; /*Indica que o elemento deve flutuar à direita*/
+    margin-right: 15px; /*Margem direita*/
+}
+
+.topnav a {
+    float: left; /*Indica que o elemento deve flutuar à esquerda*/
+    color: #f2f2f2; /*Cor do texto*/
+    text-align: center; /*Alinhamento de itens*/
+    padding: 14px 16px; /*Distância do elemento até sua borda*/
+    text-decoration: none; /*Decoração de texto. O 'none' quer dizer que o texto não terá decoração*/
+    font-size: 17px; /*Tamanho da fonte*/
+}
+
+.topnav a:hover { /*Aparencia do link quando o cursor passar em cima*/
+    background-color: #e0d9d9; /*Cor de fundo*/
+    color: black; /*Cor do texto*/
+}
+
+.topnav a.active {/*Aparência do link em atividade*/
+    background-color: #04AA6D; /*Cor de fundo*/
+    color: white; /*Cor do texto*/
+}
+
+.topnav-right { /*Lado direito da barra de navegação*/
+    float: right; /*Elemento flutua para a direita*/
+}
+/*Fim do cabeçalho...*/
+/*Início do código principal...*/
+
+#categoria-roman{
+	margin-top: 80px; /*Largura*/
+	font-size: 40px; /*Tamanho da fonte*/
+}
+
+div.categoria {
+	width: 150px; /*Largura*/
+	display: flex; /*Traz a flexibilidade de posicionamento de itens de se adequarem a tela*/
+	display: inline-block; /*Distribui lado a lado*/
+	flex-wrap: nowrap; /*Empede que o elemento caia em uma nova linha quando o site for acessado por um dispositivo de tela menor*/
+	margin-right: 40px; /*Margem direita*/
 }
 
 h1 {
-	font-family: league spartan;
-	text-align: left;
-	margin: 10px;
-	color: black;
+	font-family: league spartan; /*Fonte*/
+	text-align: left; /*Alinhamento de texto*/
+	margin: 10px; /*Margem*/
+	color: black; /*Cor do texto*/
 }
 
 .livro{
-	width: 170px;
-	height: 220px;
-	margin-left: 15px;
-	margin-right: 20px;;
-	border: 1px solid black;
+	width: 170px; /*Largura*/
+	height: 220px; /*Comprimento*/
+	margin-left: 15px; /*Margem esquerda*/
+	margin-right: 20px; /*Margem direita*/ 
+	border: 1px solid black; /*Borda*/
 }
 
-/*espaço tab*/
-.tab {
-	display: inline-block;
-	margin-left: 15px;
+button{
+	width: 90px; /*Largura*/
+	height: 40px; /*Comprimento*/
+	margin-left: 50px; /*Margem esquerda*/
+	background-color: brown; /*Cor de fundo*/
+	border-radius: 5px; /*Deixa as pontas do botão arredondadas*/
+	font-family: league spartan; /*	Fonte*/
+	font-size: 15px; /*Tamanho da fonte*/
+	border: 1px solid black; /*Borda*/
+	cursor: pointer; /*Aparencia do ponteiro do mouse ao passar pelo botão*/
+	box-shadow:inset 2px 2px 2px 0px, 
+	7px 7px 20px 0px rgba(0,0,0,.1),
+	4px 4px 5px 0px rgba(0,0,0,.1); /*Sombra do botão*/
 }
 
-
-
-/*parágrafo*/
-.h1livros {
-	font-family: league spartan;
-	font-size: 16px;
-	text-align: justify;
-	margin-left: 20px;
-
+/*Links do botão*/
+button a:visited{ /*Links visitados*/
+	color: black; /*Cor do texto*/
+  	text-decoration: none; /*Decoração de texto*/
 }
 
+button a:link{ /*Aparência do link*/
+	color: black; /*Cor do texto*/
+	text-decoration: none; /*Decoração de texto*/
+}
+
+button:hover{ /*Link quando passar por cima*/
+	background-color: transparent; /*Aparência de fundo*/
+	color: white; /*Cor do texto*/
+}
 
 .h1livros-categoria {
-	font-family: league spartan;
-	font-size: 30px;
-	text-align: justify;
-	margin-left: 20px;
+	font-family: league spartan; /*Fonte*/
+	font-size: 30px; /*Tamanho da fonte*/
+	text-align: justify; /*Alinhamento de texto justificado*/
+	margin-left: 20px; /*Margem esquerda*/
 
 }
 
 p{
-	margin-left: 30px;
-	margin-right: 20px;
-	font-family: league spartan;
+	margin-left: 30px; /*Margem esquerda*/
+	margin-right: 20px; /*Margem direita*/
+	font-family: league spartan; /*Tamanho da fonte*/
 
-}
-
-#categoria-roman{
-	margin-top: 80px;
-	font-size: 40px;
-}
-
-#categorias{
-	margin-top: 40px;
-	font-size: 40px;
-}
-
-div.categoria {
-	width: 150px;
-	display: inline-block;
-	margin-right: 40px;
-}
-
-button{
-	width: 90px;
-	height: 40px;
-	margin-left: 50px;
-	background-color: brown;
-	border-radius: 5px;
-	font-family: league spartan;
-	font-size: 15px;
-	border: 1px solid black;
-	box-shadow:inset 2px 2px 2px 0px,
-	7px 7px 20px 0px rgba(0,0,0,.1),
-	4px 4px 5px 0px rgba(0,0,0,.1);
-}
-
-button a:visited{
-	color: black;
-  	text-decoration: none;
-}
-
-button a:link{
-	color: black;
-	text-decoration: none;
 }
 
 .cabecalho-final{
-	margin-top: 20px;
-	font-size: 15px;
-	width: 1319px;
-	height: 85x;
-	background-color: #333;
-	padding: 15px;
-	font-family: arial;
-	color: white;
+	margin-top: 20px; /*Margem de cima*/
+	font-size: 15px; /*Tamanho da fonte*/
+	width: 1309px; /*Largura*/
+	height: 85px; /*Comprimento*/
+	background-color: #333; /*Cor de fundo*/
+	padding: 20px; /*Espaço entre o elemento e sua borda*/
+	font-family: arial; /*Fonte*/
+	color: white; /*Cor do texto*/
 }
+
 #footer-lado-direito{
-	margin-left:  130px;
+	margin-left:  100px; /*Margem esquerda*/
 }
 
 #footer-lado-esquerdo{
-	margin-left:  90px;
+	margin-left:  90px; /*Margem esquerda*/
 }
-
-	
-/*a:link {
-	color: black;
-	background-color: transparent;
-	text-decoration: none;
-}
-a:visited {
-  color: black;
-  background-color: maroon ;
-  text-decoration: none;
-}*/
-	
-/*a:hover {
-	color: red;
-	background-color: transparent;
-	text-decoration: underline;
-}
-
-a:active { 
-	color: yellow;
-	background-color: transparent;
-	text-decoration: underline;
-}
-*/
 
 .cf:before,
 .cf:after {
@@ -229,7 +182,13 @@ a:active {
 	zoom: 1;
 }
 
+/*espaço tab*/
+.tab {
+	display: inline-block;
+	margin-left: 15px;
+}
 
+/*Espaço tab*/
 
 .tab-container {
 	display: flex;
