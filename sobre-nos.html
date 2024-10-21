@@ -21,23 +21,30 @@
         <div class="cabeçalho">
             <div class="logo">
                 <img id="tordo-logo" src="imagens/tordo.webp" alt="">
-                <h1 class="titulo-logo-header">LEITORIA</h1>
+                <!--<h1 class="titulo-logo-header">LEITORIA</h1>-->
+				<a id="titulo-logo-header" href="index.html">LEITORIA</a>
             </div>
             <div class="topnav">
                 <a class="active" href="index.html">
 					Início</a>
-                <a href="categoria.html">
-					Categorias</a>
-                <a href="sobre-nos.html">Sobre Nós</a>
+					
+				<select id="menu" class="active" onchange="abrirPagina()">
+					<option value="categoria.html"> Categorias</option>
+        			<option value="categorias/romance.html">Romance</option>
+        			<option value="categorias/aventura.html">Aventura</option>
+					<option value="categorias/fantasia.html">Fantasia</option>
+        			<option value="categorias/terror.html">Terror</option>
+			        <option value="categorias/distopia.html">Distopia</option>
+			        <option value="categorias/ficcaoCientifica.html">Ficção Científica</option>
+			    </select>
+
             </div>
         </div>
     </header>
-
 	<main>
 		
         <img id="campus" src="imagens/campus.JPG" alt="IFRS- Campus Farroupilha"/>
         <figcaption>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul</figcaption>
-        <h1 id="titulo1">Sobre Nós</h1>
         
 
         <div class="cf">
@@ -68,21 +75,39 @@
 
 	</main>
 
-		<footer class = "cabecalho-final">
-            <div class="cf">
-                <div class="categoria">	
-                    <p id=" footer-lado-esquerdo">Por: Luiza Perini</p>
-                    <p>Contato:<br>(54)98412-8872</p>
-                </div>
-                <div>
-                    <p id="footer-lado-direito">
-                    Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul</p>
-                    <p id="footer-lado-direito">
-                    Farroupilha, RS-Brasil</p>
-                </div> 
-            </div>
-        </footer>
+    <footer>
+		<div class="container-footer">
+			<div class="if-logo">
+				<img id="tordo-logo-footer" src="imagens/tordo.webp" alt="Campus">
+			</div>
+			<h1 id="leitoria-footer">LEITORIA</h1>
+			<div class="container-info-footer">
+				<h4>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul</h4>
+				<h4>Farroupilha-RS</h4>
+			</div>
+				<p>Contato:
+					<br>
+					<br>
+					E-mail:
+					<a id="e-mail-footer" href="mailto:ifrscampusfarroupilha@farroupilha.edu.br" target="_blank">ifrscampusfarroupilha@farroupilha.edu.br</a>
+				</p>
+				<div class="container-info-footer"><!--Talvez tirar-->
+					<div class="sobreNos-footer">
+						<div class="topnav">
+							<a href="sobre-nos.html" target="_blank">
+								Sobre Nós</a>
+						</div>
+					</div>
+				</div>
+				
+				
+		</div>
+		<div id="container-info-footer-copyright">
+			<h5> &#169 Copyright 2024 - LEITORIA S.A. Todos os direitos reservados.</h5>
+		</div>
+	</footer>
 
+	<script src="scripts/index.js"></script>
 
 </body>
 

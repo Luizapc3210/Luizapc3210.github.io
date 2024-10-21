@@ -1,0 +1,389 @@
+html {
+	background-color: #FFFCA8;
+	font-family: 'league spartan';
+}
+
+body {
+	margin: 0px !important;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background-color: #333;
+}
+
+.topnav a.active, 
+#menu {
+	display: flex;
+	justify-content: flex-start;
+    background-color: #333; /* Mesma cor de fundo */
+    color: white;            /* Mesma cor de texto */
+    padding: 14px 20px;        /* Mesmo padding */
+    text-align: center;        /* Centraliza o texto */
+    text-decoration: none;     /* Remover sublinhado no link */
+    font-family: 'League Spartan'; /* Mesma fonte */
+    font-size: 16px;           /* Tamanho da fonte */
+    border: none;              /* Remover borda padrão */
+    cursor: pointer;           /* Mostra um cursor de ponteiro */
+    gap: 5px;
+	
+}	
+
+.logo {
+    display: flex;
+    margin-top: 15px;
+}
+
+.cabeçalho {
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    float: right;
+    margin-right: 15px;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav-right {
+    float: right;
+}
+
+#tordo-logo {
+	height: 40px;
+	width: 40px;
+}
+
+.titulo-logo-header {
+	color: white;
+	border: 10px;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#titulo-logo-header:visited, #titulo-logo-header:link{
+	color: white;
+	font-weight: bold;
+	font-family: league spartan;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+#campus{
+	margin-top: 10px ;
+	width: 1343px;
+	height: 600px;
+	color: white;
+	border: 3px solid black;
+}
+
+figcaption{
+	font-family: league spartan;
+	margin-left: 30px;
+}
+
+
+title {
+	border: 50px;
+}
+
+h1 {
+	font-family: league spartan;
+	text-align: left;
+	margin: 10px;
+	color: black;
+}
+
+/*espaço tab*/
+.tab {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+/*parágrafo*/
+.h1livros {
+	font-family: league spartan;
+	font-size: 16px;
+	text-align: justify;
+	margin-left: 20px;
+
+}
+
+
+.h1livros-categoria {
+	font-family: league spartan;
+	font-size: 30px;
+	text-align: justify;
+	margin-left: 20px;
+
+}
+
+#texto-sobre-nos{
+    margin-left: 20px;
+	margin-right: 500x;
+	font-family: league spartan;
+	font-size: 23px;
+	color: black;
+
+}
+h3{
+	margin-left: 20px;
+	font-family: league Spartan;
+}
+
+video{
+	margin-left: 20px;
+	border: 1px solid black;
+}
+
+
+#categorias{
+	margin-top: 40px;
+	font-size: 40px;
+}
+
+div.categoria {
+	width: 150px;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+button{
+	width: 90px;
+	height: 40px;
+	margin-left: 50px;
+	background-color: white/*purple*/;
+	border-radius: 5px;
+	color: white;
+	font-family: league spartan;
+	font-size: 15px;
+	border: 2px solid black;
+}
+
+
+.cabecalho-final{
+	margin-top: 20px;
+	font-size: 15px;
+	width: 1319px;
+	height: 85x;
+	background-color: #333;
+	padding: 15px;
+	font-family: arial;
+	color: white;
+}
+#footer-lado-direito{
+	margin-left:  130px;
+}
+
+#footer-lado-esquerdo{
+	margin-left:  90px;
+}
+
+
+/*
+	a:link {
+	  color: black;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+	a:visited {
+	  color: pink;
+	  background-color: black ;
+	  text-decoration: none;
+	}
+	/*a:hover {
+	  color: red;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+	a:active { 
+	  color: yellow;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+	*/
+
+.cf:before,
+.cf:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf>div {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.cf {
+	zoom: 1;
+}
+
+
+
+.tab-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.tab {
+	
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.tab-content {
+	display: none;
+	padding: 15px;
+	border-top: none;
+}
+
+#tab1.tab-content,
+#tab2.tab-content,
+#tab3.tab-content {
+	display: block;
+}
+
+/*------------------------------------------------------------*/
+
+.if-logo{
+    margin: 0;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+#tordo-logo-footer {
+	height: 80px;
+	width: 80px;
+	padding-top: 20px;
+}
+
+.container-footer {
+    width: 100%;
+    margin-top: 3%;
+    left: 0;
+	color: #fff;
+    bottom: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    box-sizing: border-box;
+}
+
+.container-info-footer {
+    text-align: right;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+p{
+    color: white;
+}
+
+p a:link{
+    text-decoration: none;
+    color: white;
+}
+
+#container-info-footer-copyright {
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+	color: #fff;
+    margin-left: 0;
+    padding: 2px;  
+}
+
+#container-info-footer-copyright h5 {
+    margin: 0;
+}
+
+.sobreNos-footer {
+    color: #fff;
+    background-color: #333;
+    display: flex;
+    align-items: end;
+	margin-left: 70px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    float: right;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #e0d9d9;
+    color: black;
+}
+
+#leitoria-footer{
+	color: white;
+}
+
+#e-mail-footer{
+	color: white;
+}
+
+#e-mail-footer a:hover{
+	color: yellow;
+	cursor: pointer;
+}

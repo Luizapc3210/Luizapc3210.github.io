@@ -1,190 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><!--Define o idioma do site-->
+<html lang="pt-BR">
 
-<head> 
-	<meta charset="utf-8" /> <!--Define o conjunto de caracteres a serem utilizados -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Informa ao navegador como renderizar a página em dispositivos móveis-->
-	<title> Leitoria</title><!--Aqui estáo nome do site que aparece na guia-->
-	<link rel="stylesheet" type="text/css" href="estilos/index.css"> <!--Link do documento CSS. Rel vem de relationship, serve para você dizer qual o relacionamento do arquivo que você quer utilizar com o arquivo atual. Quando você coloca rel="stylesheet" , você está dizendo que o arquivo importado é o arquivo responsável pelo estilo da sua página.-->
-	</link>
-	<link rel="icon" href="imagens/tordo.webp"><!--Link do ícone da guia do site-->
-	</link>
-	<link rel="preconnect" href="https://fonts.googleapis.com">	<!--Os três seguintes links referenciam a fonte escolhida no Google Fonts-->																						  
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+	<title>Leitoria</title>
+	<link rel="stylesheet" type="text/css" href="estilos/index.css">
+	<link rel="icon" href="imagens/tordo.webp">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-	<header><!--Cabeçalho-->
-        <div class="cabeçalho"> <!--O <header> recebe uma <div> com uma classe chamada 'cabeçalho'-->
-            <div class="logo"> <!--A <div> recebe uma clase chamada 'logo'-->
-                <img id="tordo-logo" src="imagens/tordo.webp" alt=""> <!--Uma imagem é adicionada e tem um identificador chamado de 'tordo-logo'-->
-                <h1 class="titulo-logo-header">LEITORIA</h1> <!--A tag <h1> é um título de texto-->
+	<header>
+        <div class="cabeçalho">
+            <div class="logo">
+                <img id="tordo-logo" src="imagens/tordo.webp" alt="">
+                <!--<h1 class="titulo-logo-header">LEITORIA</h1>-->
+				<a id="titulo-logo-header" href="index.html">LEITORIA</a>
             </div>
-            <div class="topnav"> <!--Abaixo, links para as barras de navegação-->
-                <a class="active" href="index.html"> 
-					Início</a> <!--Aba de Início-->
-                <a href="categoria.html">
-					Categorias</a> <!--Aba de categorias-->
-                <a href="sobre-nos.html">
-					Sobre Nós</a><!--Aba sobre nós-->
+            <div class="topnav">
+                <a class="active" href="index.html">
+					Início</a>
+					
+				<select id="menu" class="active" onchange="abrirPagina()">
+					<option value="../categoria.html"> Categorias</option>
+        			<option value="categorias/romance.html">Romance</option>
+        			<option value="categorias/aventura.html">Aventura</option>
+					<option value="categorias/fantasia.html">Fantasia</option>
+        			<option value="categorias/terror.html">Terror</option>
+			        <option value="categorias/distopia.html">Distopia</option>
+			        <option value="categorias/ficcaoCientifica.html">Ficção Científica</option>
+			    </select>
+
             </div>
         </div>
     </header>
 
-	<main> <!--Início do código principal-->
-		<div class="biblioteca"> <!--A tag <div> recebe uma classe chamada de 'biblioteca'-->
-			<p id="texto-centro">SUA BIBLIOTECA<br>VIRTUAL É AQUI!</p> <!--O identificador 'texto-centro' recebe um parágrafo-->
+	<main>
+		<div class="biblioteca"> 
+			<p id="texto-centro">SUA BIBLIOTECA<br>VIRTUAL É AQUI!</p>
 		</div>
 
-		<h1>Lançamentos</h1> <!---Título 'Lançamentos'-->
-		
-		<div class="categoria"> <!--A tag <div> recebe uma class chamada de 'categoria' -->
-			<a href="categoria.html#O-Lado-Feio-do-Amor"> <!--Link da página 'categoria. html'. O link leva a uma seção-->
-				<img class = "livro" src="capas/oladofeiodoamor.jpg" alt="Livro"/> <!--A imagem recebe uma class chamada 'livro'-->
+		<h1>Lançamentos</h1>
+	<!--------------------------------------------------------------------------------------------------------->
+		<div class="categoria">
+			<a href="categoria.html#1984">	
+				<img class = "livro" src="capas/1984.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">O Lado Feio do Amor<h1><!--O título <h1> recebe a class chamada de 'h1livros'-->
+			<h1 class="h1livros">1984 <br>George Orwell<h1>
 		</div>
 		<div class="categoria">
-			<a href="categoria.html#O-Nome-do-Vento">	
-				<img class = "livro" src="capas/onomedovento(1).jpg" alt="Livro"/>
+			<a href="categoria.html#AQuedadaCasadeUsher">	
+				<img class = "livro" src="capas/AQuedadaCasadeUsher.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">O Nome do<br> Vento<h1>
+			<h1 class="h1livros">A Queda da <br> Casa de Usher<h1>
 		</div>
 		<div class="categoria">
-			<a href="categoria.html#dracula">	
+			<a href="categoria.html#Dracula">	
 				<img class = "livro" src="capas/dracula.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">Drácula<br>-Bran Stoker<h1>
+			<h1 class="h1livros">Drácula<br>Bran Stoker<h1>
 		</div>
 		<div class="categoria">
-			<a href="categoria.html#O-Conto-da-Aia">	
-				<img class = "livro" src="capas/o_conto_de_aia.jpg" alt="Livro"/>
+			<a href="categoria.html#AAbadiaDeNorthanger">	
+				<img class = "livro" src="capas/AAbadiaDeNorthanger.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">O Conto da Aia<br>-Margaret A.<h1>
+			<h1 class="h1livros">A Abadia <br>de Northanger<h1>
 		</div>
 		<div class="categoria">
-			<a href="categoria.html#Harry-Potter-e-a-Pedra-Filosofal">
-				<img class = "livro" src="capas/harry-potter(1).jpg" alt="Livro"/>
+			<a href="categoria.html#UmaPrincessaDeMarte">
+				<img class = "livro" src="capas/UmaPrincesadeMarte.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">Harry Potter e a Pedra Filosofal<h1>
+			<h1 class="h1livros">Uma Princessa <br>de Marte<h1>
 		</div>
 		<div class="categoria">
-			<a href="categoria.html#Duna">	
-				<img class = "livro" src="capas/duna.jpg" alt="Livro"/>
+			<a href="categoria.html#OCondeDeMonteCristo">	
+				<img class = "livro" src="capas/OCondeDeMonteCristo.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">Duna<br>-Frank Herbert<h1>
+			<h1 class="h1livros">O Conde de <br>Monte Cristo<h1>
 		</div>
 		
-		<div class="ver-mais"> <!--A tag <div> recebe uma class chamada de 'ver-mais'-->
-			<img class = "flecha" src="imagens/flecha-ico.png" onclick="clicou()"/> <!--A tag <img> recebe uma class chamada de 'flecha' que recebe o link de uma imagem e também, recebe uma função chamada de 'clicou'-->
+		<div class="ver-mais">
+			<img class = "flecha" src="imagens/flecha-ico.png" onclick="clicou()"/>
 		</div>
 
-		<h1>Livros do Momento</h1> <!--Título 'Livros do Momento'-->
+		<h1>Livros do Momento</h1>
 		<div class="categoria">
-			<a href="categoria.html#Orgulho-e-Preconceito">	
+			<a href="categoria.html#OrgulhoEPreconceito">	
 				<img class = "livro" src="capas/Orgulho-e-preconceito.jpg" alt="Livro"/>
 			</a>
 			<h1 class="h1livros">Orgulho e<br> Preconceito<h1>
 		</div>
 		<div class="categoria">
-			<a href="categoria.html#O-Iluminado">	
-				<img class = "livro" src="capas/o-iluminado.jpg" alt="Livro"/>
+			<a href="categoria.html#OPrimoBasilio">	
+				<img class = "livro" src="capas/OPrimoBasilio.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">O Iluminado<br>Stephen King<h1>
+			<h1 class="h1livros">O Primo Basílio <br>Eça de Queirós<h1>
 		</div>
 		<div class="categoria">
-			<a href="categoria.html#O-Lado-Feio-do-Amor">	
-			<img class = "livro" src="capas/oladofeiodoamor.jpg" alt="Livro"/>
+			<a href="categoria.html#OsMiseraveis">	
+			<img class = "livro" src="capas/OsMiseraveis.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">O Lado Feio do Amor<h1>
+			<h1 class="h1livros">Os Miseráveis <br>Victor Hugo<h1>
 		</div>
 		<div class="categoria">	
-			<a href="categoria.html#Fahrenheit-451">
-				<img class = "livro" src="capas/Fahrenheit-451.jpg" alt="Livro"/>
+			<a href="categoria.html#AMaquinaDoTempo">
+				<img class = "livro" src="capas/AMaquinaDoTempo.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">Fahrenheit 451<br>-Ray Bradbury<h1>
+			<h1 class="h1livros">A Máquina<br> do Tempo<h1>
 		</div>   
 		<div class="categoria">
-			<a href="categoria.html#Trono-de-Vidro">	
-				<img class = "livro" src="capas/trono-de-vidro.jpg" alt="Livro"/>
+			<a href="categoria.html#PlanetaDosMacacos">	
+				<img class = "livro" src="capas/PlanetaDosMacacos.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">Trono de Vidro<br>-Sarah J. Mass<h1>
+			<h1 class="h1livros">Planeta dos <br> Macacos<h1>
 		</div>
 		<div class="categoria">	
-			<a href="categoria.html#Volta-ao-Mundo-em-80-Dias">
-				<img class = "livro" src="capas/A-Volta-ao-Mundo-em-80 Dias.jpg" alt="Livro"/>
+			<a href="categoria.html#OMundoPerdido">
+				<img class = "livro" src="capas/OMundoPerdido.jpg" alt="Livro"/>
 			</a>
-			<h1 class="h1livros">Volta ao Mundo em 80 dias<h1>
+			<h1 class="h1livros">O Mundo <br> Perdido<h1>
 		</div>
 		<div class="ver-mais">
   
-    <img class = "flecha" src="imagens/flecha-ico.png" onclick="clicou()"/> <!--A tag <img> recebe uma class chamada de 'flecha' que recebe o link de uma imagem e também, recebe uma função chamada de 'clicou'-->
+    <img class = "flecha" src="imagens/flecha-ico.png" onclick="clicou()"/>
 		</div>
-
-		<!--Categorias-->
+		<!--------------------------------------------------------------------------------------------------------->
 		
-		</div>
-
-		<div class="cf"> <!--A tag <div> recebe uma classe chamada 'cf'-->
-			<h2 class="h2">Categorias</h2> <!--Um título <h2> recebe a class 'h2' e mostra as categorias-->
-			<div>	
-				<button> <!--Botão-->
-					<a href="categoria.html#secao-romance"> <!--Link para uma seção dentro de outra página HTML-->
-					Romance <!--Nome da seção-->
-				</a> 
-				</button>
-			</div>
-			<div> 
-				<button>
-				<a href="categoria.html#secao-aventura">
-					Aventura
-				</a>
-				</button>
-			</div>
-			<div> 
-				<button> 
-                    <a href="categoria.html#secao-terror">
-					Terror
-                    </a>
-				</button>
-			</div>
-			<div> 
-				<button>
-                    <a href="categoria.html#secao-distopia">
-                        Distopia
-                        </a>
-				</button>
-			</div>
-			<div> 
-				<button>
-                    <a href="categoria.html#secao-ficcao-cientifica">
-                        Ficção Científica
-                        </a>
-				
-                    </button>
-			</div>
 		</div>
 
 	</main>
 
-		<footer class = "cabecalho-final"> <!--A tag <footer> (cabeçalho), recebe uma class chamada de cabeçalho-final-->
-            <div class="cf"> <!--A tag <div> recebe uma class chamada 'cf'-->  
-                <div class="categoria">	<!--A tag <div> recebe uma classa chamada categoria-->
-                    <p id=" footer-lado-esquerdo">Por: Luiza Perini</p> <!--O parágrafo recebe um identificador chamado de 'footer-lado-esquerdo' OBS: Tentativa de gambiarra-->
-                    <p>Contato:<br>(54)98412-8872</p> <!--O parágrafo rebebe um texto e no meio, uma quebra de linha-->
-                </div>
-                <div>
-                    <p id="footer-lado-direito"> <!--O parágrafo recebe um identificador chamado de 'footer-lado-direito' OBS: Tentativa de gambiarra-->
-                    Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul</p>
-                    <p id="footer-lado-direito">
-                    Farroupilha, RS-Brasil</p>
-                </div> 
-            </div>
-        </footer>
+	<footer>
+		<div class="container-footer">
+			<div class="if-logo">
+				<img id="tordo-logo-footer" src="imagens/tordo.webp" alt="Campus">
+			</div>
+			<h1 id="leitoria-footer">LEITORIA</h1>
+			<div class="container-info-footer">
+				<h4>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul</h4>
+				<h4>Farroupilha-RS</h4>
+			</div>
+				<p>Contato:
+					<br>
+					<br>
+					E-mail:
+					<a id="e-mail-footer" href="mailto:ifrscampusfarroupilha@farroupilha.edu.br" target="_blank">ifrscampusfarroupilha@farroupilha.edu.br</a>
+				</p>
+				<div class="container-info-footer"><!--Talvez tirar-->
+					<div class="sobreNos-footer">
+						<div class="topnav">
+							<a href="sobre-nos.html" target="_blank">
+								Sobre Nós</a>
+						</div>
+					</div>
+				</div>
+				
+				
+		</div>
+		<div id="container-info-footer-copyright">
+			<h5> &#169 Copyright 2024 - LEITORIA S.A. Todos os direitos reservados.</h5>
+		</div>
+	</footer>
 
-		<script src="scripts/index.js"></script> <!--Link do arquivo de Javascript-->
+		<script src="scripts/index.js"></script>
 
 </body>
 
