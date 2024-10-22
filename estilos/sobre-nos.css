@@ -1,10 +1,10 @@
 html {
-	background-color: #FFFCA8;
-	font-family: 'league spartan';
+    background-color: #4d4c4c;
+    font-family: 'League Spartan';
 }
 
 body {
-	margin: 0px !important;
+    margin: 0px !important;
 }
 
 header {
@@ -30,11 +30,10 @@ header {
     cursor: pointer;           /* Mostra um cursor de ponteiro */
     gap: 5px;
 	
-}	
-
+}
 .logo {
     display: flex;
-    margin-top: 15px;
+    margin-top: 13px;
 }
 
 .cabeçalho {
@@ -55,7 +54,8 @@ header {
 .topnav {
     overflow: hidden;
     background-color: #333;
-    float: right;
+	display: inline-block;
+    
     margin-right: 15px;
 }
 
@@ -69,13 +69,17 @@ header {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #e0d9d9;
     color: black;
 }
 
 .topnav a.active {
+	display: flex;
+	justify-content: flex-start;
     background-color: #04AA6D;
     color: white;
+   gap: 5px;
+
 }
 
 .topnav-right {
@@ -83,15 +87,15 @@ header {
 }
 
 #tordo-logo {
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width: 50px;
 }
 
 .titulo-logo-header {
 	color: white;
 	border: 10px;
 	padding-left: 10px;
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-left: 10px;
 	text-align: center;
 	text-decoration: none;
@@ -107,189 +111,79 @@ header {
 	font-size: 2em;
 }
 
-#campus{
-	margin-top: 10px ;
-	width: 1343px;
-	height: 600px;
-	color: white;
-	border: 3px solid black;
-}
-
-figcaption{
-	font-family: league spartan;
-	margin-left: 30px;
-}
-
-
-title {
-	border: 50px;
-}
-
-h1 {
-	font-family: league spartan;
-	text-align: left;
-	margin: 10px;
-	color: black;
-}
-
-/*espaço tab*/
 .tab {
 	display: inline-block;
-	margin-left: 15px;
-}
-
-/*parágrafo*/
-.h1livros {
-	font-family: league spartan;
-	font-size: 16px;
-	text-align: justify;
-	margin-left: 20px;
-
+	margin-left: 40px;
 }
 
 
-.h1livros-categoria {
-	font-family: league spartan;
-	font-size: 30px;
-	text-align: justify;
-	margin-left: 20px;
-
+main {
+    margin-top: 70px; /* Ajuste para não sobrepor o cabeçalho fixo */
+    padding: 20px;
 }
 
-#texto-sobre-nos{
-    margin-left: 20px;
-	margin-right: 500x;
-	font-family: league spartan;
-	font-size: 23px;
-	color: black;
-
-}
-h3{
-	margin-left: 20px;
-	font-family: league Spartan;
-}
-
-video{
-	margin-left: 20px;
-	border: 1px solid black;
-}
-
-
-#categorias{
-	margin-top: 40px;
-	font-size: 40px;
-}
-
-div.categoria {
-	width: 150px;
-	display: inline-block;
-	margin-right: 40px;
-}
-
-button{
-	width: 90px;
-	height: 40px;
-	margin-left: 50px;
-	background-color: white/*purple*/;
-	border-radius: 5px;
-	color: white;
-	font-family: league spartan;
-	font-size: 15px;
-	border: 2px solid black;
-}
-
-
-.cabecalho-final{
-	margin-top: 20px;
-	font-size: 15px;
-	width: 1319px;
-	height: 85x;
+.intro {
+	width: 70%;
+	height: 60%;
 	background-color: #333;
-	padding: 15px;
-	font-family: arial;
-	color: white;
-}
-#footer-lado-direito{
-	margin-left:  130px;
-}
-
-#footer-lado-esquerdo{
-	margin-left:  90px;
-}
-
-
-/*
-	a:link {
-	  color: black;
-	  background-color: transparent;
-	  text-decoration: none;
-	}
-	a:visited {
-	  color: pink;
-	  background-color: black ;
-	  text-decoration: none;
-	}
-	/*a:hover {
-	  color: red;
-	  background-color: transparent;
-	  text-decoration: underline;
-	}
-	a:active { 
-	  color: yellow;
-	  background-color: transparent;
-	  text-decoration: underline;
-	}
-	*/
-
-.cf:before,
-.cf:after {
-	content: " ";
-	/* 1 */
-	display: table;
-	/* 2 */
-}
-
-.cf:after {
-	clear: both;
-}
-
-.cf>div {
-	display: table-cell;
-	vertical-align: top;
-}
-
-.cf {
-	zoom: 1;
-}
-
-
-
-.tab-container {
+	border-radius: 4px;
+	border: 1px solid black;
 	display: flex;
-	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 10px 10px;
+	margin-left: 15%;
+	margin-bottom: 2%;
 }
 
-.tab {
-	
-	padding: 10px;
-	border: none;
-	cursor: pointer;
-	outline: none;
+#intro2{
+	background-color: #5e5e5e;
 }
 
-.tab-content {
-	display: none;
-	padding: 15px;
-	border-top: none;
+.tituloApresentacao{
+	text-align: center;
 }
 
-#tab1.tab-content,
-#tab2.tab-content,
-#tab3.tab-content {
-	display: block;
+.tituloCentralizado{
+	text-align: center;
 }
 
-/*------------------------------------------------------------*/
+.textoApresentacao{
+	color: white;
+	font-size: 1.5em;
+	align-items: left;
+	padding: 2%;
+}
+
+
+.intro {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adicionado para espaço entre os containers */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 10px 10px;
+}
+
+.membrosEquipe {
+    width: 30%; /* Ajustado para melhor visualização */
+    height: auto;
+    background-color: #444;
+    border-radius: 6px;
+    border: 1px solid black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nossa-historia, .nossa-equipe {
+    margin: 40px 0;
+}
+
+/*-----------------------------------------------------------------------------*/
 
 .if-logo{
     margin: 0;
@@ -325,8 +219,9 @@ button{
 	margin-left: 1%;
 }
 
-p{
-    color: white;
+#leitoria-footer{
+	color: white;
+	margin-left: 1%;
 }
 
 p a:link{
@@ -341,7 +236,7 @@ p a:link{
     margin: 0;
 	color: #fff;
     margin-left: 0;
-    padding: 2px;  
+    padding: 4px;  
 }
 
 #container-info-footer-copyright h5 {
@@ -373,10 +268,6 @@ p a:link{
 .topnav a:hover {
     background-color: #e0d9d9;
     color: black;
-}
-
-#leitoria-footer{
-	color: white;
 }
 
 #e-mail-footer{

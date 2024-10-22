@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html>
-
-    
+<html lang="pt-br">
 <head>
-	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
-	<title> Leitoria</title>
-	<link rel="stylesheet" type="text/css" href="estilos/sobre-nos.css">
-	</link>
-	<link rel="icon" href="imagens/tordo.webp">
-	</link>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitoria</title>
+    <link rel="stylesheet" href="estilos/sobre-nos.css">
+    <link rel="icon" href="imagens/tordo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-	<header>
+    <header>
         <div class="cabeçalho">
             <div class="logo">
                 <img id="tordo-logo" src="imagens/tordo.webp" alt="">
@@ -29,7 +23,7 @@
 					Início</a>
 					
 				<select id="menu" class="active" onchange="abrirPagina()">
-					<option value="categoria.html"> Categorias</option>
+					<option value="../categoria.html"> Categorias</option>
         			<option value="categorias/romance.html">Romance</option>
         			<option value="categorias/aventura.html">Aventura</option>
 					<option value="categorias/fantasia.html">Fantasia</option>
@@ -41,40 +35,35 @@
             </div>
         </div>
     </header>
-	<main>
+    <main>
 		
-        <img id="campus" src="imagens/campus.JPG" alt="IFRS- Campus Farroupilha"/>
-        <figcaption>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul</figcaption>
-        
+		<h1 class="tituloApresentacao">Bem-vindo à Leitoria</h1>
+        <div class="intro">
+            
+            <p class="textoApresentacao">
+				<span class="tab"></span>Olá, meu nome é Luiza Perini e sou aluna do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul. Fui desafiada pelo professor Rafael Vieira Coelho a desenvolver o projeto de um site que promovesse o acesso à informação de uma maneira fácil e acessível para todos. Assim, apresento uma verdadeira biblioteca virtual.</p>
+		</div>
+		<h2 class="tituloCentralizado">Nossa História</h2>
+        <div class="intro" id="intro2">   
+            <p class="textoApresentacao">
+				<span class="tab"></span>A Leitoria começou como um projeto acadêmico, mas rapidamente evoluiu para uma plataforma rica em conteúdo, sendo um catálogo de obras de domínio público para o conhecimento e circulação de livros importates tanto para a literatura brasileira quanto ao redor do mundo, proporcionando um espaço que seja acessível a todos na hora de escolher a próxima leitura...</p>
+		</div>
+		<h2 class="tituloCentralizado">Nossa Equipe</h2>
+        <div class="container">
+			<div class="intro">
+				<div class="membrosEquipe">
+					<h3>Luiza Perini</h3>
+					<p>Aluna do segundo ano do Técnico em Informática Integrado ao Ensino Médio e autora do site.</p>
+				</div>
+				<div class="membrosEquipe">
+					<h3>Rafael Coelho</h3>
+					<p>Professor e Doutor no IFRS- Campus Farroupilha e orientador do projeto.</p>
+				</div>
+			</div>
+		</div>
+		
 
-        <div class="cf">
-            <div class="categoria">	
-                <h3>Conheça o campus:</h3>
-                <video
-                    controls
-                    width="500"
-                    height="300"
-                    loop
-                    poster="imagens/Campus-poster-IFRS.jpg">
-                        <source src="video/Vídeo Institucional IFRS Campus Farroupilha 2022.mp4" type="video/mp4"/> 
-                </video>
-            </div>
-            <div>
-                <p id="texto-sobre-nos"><span class="tab"></span>Olá, meu nome é Luiza Perini e sou aluna do Instituto Federal de Educação, Ciência eTecnologia do Rio Grande
-                    do Sul. Recentemente, fui desafiada pelo professor Rafael Vieira Coelho a desenvolver o projeto de um site.
-                    Após considerar diversas ideias, decidi focar em algo que pudesse promover o acesso à informação de uma maneira
-                    fácil e acessível para todos. Assim, apresento uma verdadeira biblioteca virtual.<br>
-                    <span class="tab"></span>Imagine ter acesso a uma vasta coleção de livros, tudo disponível com apenas alguns cliques. Esse é o objetivo do site:
-                    proporcionar uma experiência de entretenimento e conhecimento online.<br> 
-                    <span class="tab"></span>Acredito que essa biblioteca virtual será uma ferramenta valiosa para os estudantes, professores e funcionários do Instituto
-                    Federal, bem como para qualquer pessoa que tenha interesse em ler.
-                </p>        
-            </div>
-
-        
-
-	</main>
-
+    </main>
     <footer>
 		<div class="container-footer">
 			<div class="if-logo">
@@ -98,17 +87,13 @@
 								Sobre Nós</a>
 						</div>
 					</div>
-				</div>
-				
-				
+				</div>	
 		</div>
 		<div id="container-info-footer-copyright">
 			<h5> &#169 Copyright 2024 - LEITORIA S.A. Todos os direitos reservados.</h5>
 		</div>
 	</footer>
 
-	<script src="scripts/index.js"></script>
-
+    <script src="scripts/index.js"></script>
 </body>
-
 </html>
